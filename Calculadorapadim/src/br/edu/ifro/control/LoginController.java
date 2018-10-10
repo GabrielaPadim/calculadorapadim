@@ -1,6 +1,6 @@
 package br.edu.ifro.control;
 
-import br.edu.ifro.modelo.Login;
+import br.edu.ifro.model.Login;
 import br.eti.diegofonseca.MaskFieldUtil;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
@@ -54,7 +54,7 @@ public class LoginController implements Initializable {
             if (login.getSenha().equals(senha)) {
                 JOptionPane.showMessageDialog(null, "Login efetuado com sucesso");
                 FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/MenuPrincipal.fxml"));
+                fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/TelaPrincipal.fxml"));
                 Scene scene = new Scene(fxmlLoader.load());
                 Stage stage = new Stage();
                 stage.setTitle("Menu Principal");
@@ -77,14 +77,6 @@ public class LoginController implements Initializable {
         MaskFieldUtil.cpfCnpjField(txtcpf);
     }
 
-    private void CadastrarUsuario(ActionEvent event) throws IOException {
-                FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(getClass().getResource("/br/edu/ifro/view/CadastrarUsuario.fxml"));
-                Scene scene = new Scene(fxmlLoader.load());
-                Stage stage = new Stage();
-                stage.setTitle("Menu Principal");
-                stage.setScene(scene);
-                stage.show();
     }
 
-}
+

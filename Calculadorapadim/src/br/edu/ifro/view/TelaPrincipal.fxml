@@ -5,7 +5,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="401.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="br.edu.ifro.TelaPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="240.0" prefWidth="401.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="br.edu.ifro.control.TelaPrincipalController">
     <children>
         <Button fx:id="btnSoma" layoutX="278.0" layoutY="25.0" onAction="#soma" prefHeight="34.0" prefWidth="104.0" text="Soma" />
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
